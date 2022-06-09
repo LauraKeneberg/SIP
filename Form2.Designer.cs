@@ -50,6 +50,9 @@
             this.lb_SIP.Size = new System.Drawing.Size(77, 32);
             this.lb_SIP.TabIndex = 1;
             this.lb_SIP.Text = "СИП";
+            this.lb_SIP.Click += new System.EventHandler(this.lb_SIP_Click);
+            this.lb_SIP.MouseLeave += new System.EventHandler(this.lb_SIP_MouseLeave);
+            this.lb_SIP.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lb_SIP_MouseMove);
             // 
             // lb_autoriz
             // 
@@ -57,7 +60,7 @@
             this.lb_autoriz.BackColor = System.Drawing.SystemColors.Highlight;
             this.lb_autoriz.Font = new System.Drawing.Font("Bookman Old Style", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lb_autoriz.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lb_autoriz.Location = new System.Drawing.Point(891, 292);
+            this.lb_autoriz.Location = new System.Drawing.Point(803, 221);
             this.lb_autoriz.Name = "lb_autoriz";
             this.lb_autoriz.Size = new System.Drawing.Size(229, 39);
             this.lb_autoriz.TabIndex = 2;
@@ -66,7 +69,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Bookman Old Style", 18F);
-            this.textBox1.Location = new System.Drawing.Point(901, 435);
+            this.textBox1.Location = new System.Drawing.Point(813, 364);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(216, 36);
             this.textBox1.TabIndex = 3;
@@ -77,7 +80,7 @@
             this.lb_login1.BackColor = System.Drawing.SystemColors.Highlight;
             this.lb_login1.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lb_login1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lb_login1.Location = new System.Drawing.Point(902, 414);
+            this.lb_login1.Location = new System.Drawing.Point(814, 343);
             this.lb_login1.Name = "lb_login1";
             this.lb_login1.Size = new System.Drawing.Size(54, 19);
             this.lb_login1.TabIndex = 4;
@@ -89,7 +92,7 @@
             this.lb_parol1.BackColor = System.Drawing.SystemColors.Highlight;
             this.lb_parol1.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lb_parol1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lb_parol1.Location = new System.Drawing.Point(903, 504);
+            this.lb_parol1.Location = new System.Drawing.Point(815, 433);
             this.lb_parol1.Name = "lb_parol1";
             this.lb_parol1.Size = new System.Drawing.Size(62, 19);
             this.lb_parol1.TabIndex = 5;
@@ -98,7 +101,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Bookman Old Style", 18F);
-            this.textBox2.Location = new System.Drawing.Point(901, 525);
+            this.textBox2.Location = new System.Drawing.Point(813, 454);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(216, 36);
             this.textBox2.TabIndex = 6;
@@ -107,12 +110,13 @@
             // 
             this.bt_vhod.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bt_vhod.Font = new System.Drawing.Font("Bookman Old Style", 18F);
-            this.bt_vhod.Location = new System.Drawing.Point(952, 600);
+            this.bt_vhod.Location = new System.Drawing.Point(864, 529);
             this.bt_vhod.Name = "bt_vhod";
             this.bt_vhod.Size = new System.Drawing.Size(114, 37);
             this.bt_vhod.TabIndex = 7;
             this.bt_vhod.Text = "Вход";
             this.bt_vhod.UseVisualStyleBackColor = true;
+            this.bt_vhod.Click += new System.EventHandler(this.bt_vhod_Click);
             // 
             // Form2
             // 

@@ -30,5 +30,35 @@ namespace SIP
             f3.Show();
             this.Hide();
         }
+
+        private void bt_autoriz_MouseMove(object sender, MouseEventArgs e)
+        {
+            bt_autoriz.ForeColor = Color.Blue;
+        }
+
+        private void bt_registr_MouseMove(object sender, MouseEventArgs e)
+        {
+            bt_registr.ForeColor = Color.Blue;
+        }
+
+        private void bt_autoriz_MouseLeave(object sender, EventArgs e)
+        {
+            bt_autoriz.ForeColor = Color.Black;
+        }
+
+        private void bt_registr_MouseLeave(object sender, EventArgs e)
+        {
+            bt_registr.ForeColor = Color.Black;
+        }
+
+        private void lb_SIP_MouseMove(object sender, MouseEventArgs e)
+        {
+            lb_SIP.ForeColor = Color.Orange;
+        }
+
+        private void lb_SIP_MouseLeave(object sender, EventArgs e)
+        {
+            lb_SIP.ForeColor = Color.Pink;
+        }
     }
 }

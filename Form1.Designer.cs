@@ -46,28 +46,34 @@
             this.lb_SIP.Size = new System.Drawing.Size(77, 32);
             this.lb_SIP.TabIndex = 0;
             this.lb_SIP.Text = "СИП";
+            this.lb_SIP.MouseLeave += new System.EventHandler(this.lb_SIP_MouseLeave);
+            this.lb_SIP.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lb_SIP_MouseMove);
             // 
             // bt_autoriz
             // 
             this.bt_autoriz.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bt_autoriz.Location = new System.Drawing.Point(888, 408);
+            this.bt_autoriz.Location = new System.Drawing.Point(818, 394);
             this.bt_autoriz.Name = "bt_autoriz";
             this.bt_autoriz.Size = new System.Drawing.Size(185, 37);
             this.bt_autoriz.TabIndex = 1;
             this.bt_autoriz.Text = "Авторизация";
             this.bt_autoriz.UseVisualStyleBackColor = true;
             this.bt_autoriz.Click += new System.EventHandler(this.bt_vhod_Click);
+            this.bt_autoriz.MouseLeave += new System.EventHandler(this.bt_autoriz_MouseLeave);
+            this.bt_autoriz.MouseMove += new System.Windows.Forms.MouseEventHandler(this.bt_autoriz_MouseMove);
             // 
             // bt_registr
             // 
             this.bt_registr.Font = new System.Drawing.Font("Bookman Old Style", 18F);
-            this.bt_registr.Location = new System.Drawing.Point(888, 484);
+            this.bt_registr.Location = new System.Drawing.Point(818, 470);
             this.bt_registr.Name = "bt_registr";
             this.bt_registr.Size = new System.Drawing.Size(185, 37);
             this.bt_registr.TabIndex = 2;
             this.bt_registr.Text = "Регистрация";
             this.bt_registr.UseVisualStyleBackColor = true;
             this.bt_registr.Click += new System.EventHandler(this.bt_registr_Click);
+            this.bt_registr.MouseLeave += new System.EventHandler(this.bt_registr_MouseLeave);
+            this.bt_registr.MouseMove += new System.Windows.Forms.MouseEventHandler(this.bt_registr_MouseMove);
             // 
             // Form1
             // 

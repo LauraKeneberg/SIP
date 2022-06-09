@@ -41,6 +41,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.lb_otch = new System.Windows.Forms.Label();
+            this.lb_SIP = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bt_vhod
@@ -54,6 +55,7 @@
             this.bt_vhod.TabIndex = 13;
             this.bt_vhod.Text = "Регистрация";
             this.bt_vhod.UseVisualStyleBackColor = true;
+            this.bt_vhod.Click += new System.EventHandler(this.bt_vhod_Click);
             // 
             // textBox2
             // 
@@ -167,12 +169,27 @@
             this.lb_otch.TabIndex = 18;
             this.lb_otch.Text = "Отчество";
             // 
+            // lb_SIP
+            // 
+            this.lb_SIP.AutoSize = true;
+            this.lb_SIP.BackColor = System.Drawing.Color.HotPink;
+            this.lb_SIP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lb_SIP.Font = new System.Drawing.Font("Bookman Old Style", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_SIP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lb_SIP.Location = new System.Drawing.Point(12, 22);
+            this.lb_SIP.Name = "lb_SIP";
+            this.lb_SIP.Size = new System.Drawing.Size(77, 32);
+            this.lb_SIP.TabIndex = 20;
+            this.lb_SIP.Text = "СИП";
+            this.lb_SIP.Click += new System.EventHandler(this.lb_SIP_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.lb_SIP);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.lb_otch);
             this.Controls.Add(this.textBox3);
@@ -186,7 +203,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lb_autoriz);
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "SIP";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,5 +223,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label lb_otch;
+        private System.Windows.Forms.Label lb_SIP;
     }
 }
