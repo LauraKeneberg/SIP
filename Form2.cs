@@ -18,51 +18,32 @@ namespace SIP
             InitializeComponent();
         }
 
-        private void lb_SIP_Click(object sender, EventArgs e)
-        {
-            Form1 f1 = new Form1();
-            f1.Show();
-            this.Hide();
-        }
 
-        private void lb_SIP_MouseMove(object sender, MouseEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            lb_SIP.ForeColor = Color.Orange;
-        }
-
-        private void lb_SIP_MouseLeave(object sender, EventArgs e)
-        {
-            lb_SIP.ForeColor = Color.Pink;
-        }
-
-        private void bt_vhod_Click(object sender, EventArgs e)
-        {
-            string LoginUser = textBox1.Text;
-            string PassUser = textBox2.Text;
-
+            button1.ForeColor = System.Drawing.Color.Blue;
             DB db = new DB();
-            DataTable table = new DataTable();
-
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-
-            MySqlCommand command = new MySqlCommand("select * from Users where Login = @UL and Password = @UP", db.GetConnection());
-
-            command.Parameters.Add("@UL", MySqlDbType.VarChar).Value = LoginUser;
-            command.Parameters.Add("@UP", MySqlDbType.VarChar).Value = PassUser;
-
-            adapter.SelectCommand = command;
+            MySqlCommand command = new MySqlCommand("SELECT sotrudniky.name as Имя, sotrudniky.surname as Фамилия, sotrudniky.otchestvo as Отчество, ceh.name as Цех FROM sip.sotrudniky cross join sip.ceh on sotrudniky.Ceh_Id = Ceh.Id;", db.GetConnection());
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            db.openConnection();
+            System.Data.DataTable table = new System.Data.DataTable();
             adapter.Fill(table);
+            dataGridView1.DataSource = table;
+            db.closeConnection();
+            button2.ForeColor = System.Drawing.Color.Black;
+            button3.ForeColor = System.Drawing.Color.Black;
+        }
 
-            if (table.Rows.Count < 0)
-                MessageBox.Show("Добро пожаловать! ^_^");
-            else
-                MessageBox.Show("No");
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 fo1 = new Form1();
+            fo1.Show();
+        }
 
-            this.Hide();
-            Form4 f4 = new Form4();
-            f4.Show();
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 fo1 = new Form1();
+            fo1.Show();
         }
     }
-
-
 }

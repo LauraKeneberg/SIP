@@ -34,10 +34,7 @@
             this.bt_scl2 = new System.Windows.Forms.Button();
             this.bt_scl1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Names = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tara = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,36 +88,21 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
-            this.Names,
-            this.Count,
-            this.Tara});
+            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
+            this.dataGridView1.ImeMode = System.Windows.Forms.ImeMode.On;
             this.dataGridView1.Location = new System.Drawing.Point(12, 60);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(958, 955);
             this.dataGridView1.TabIndex = 10;
             // 
-            // Id
+            // comboBox1
             // 
-            this.Id.HeaderText = "IdCol";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            // 
-            // Names
-            // 
-            this.Names.HeaderText = "NameCol";
-            this.Names.Name = "Names";
-            // 
-            // Count
-            // 
-            this.Count.HeaderText = "CountCol";
-            this.Count.Name = "Count";
-            // 
-            // Tara
-            // 
-            this.Tara.HeaderText = "TaraCol";
-            this.Tara.Name = "Tara";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(1098, 144);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 11;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Form5
             // 
@@ -128,6 +110,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -149,9 +132,6 @@
         private System.Windows.Forms.Button bt_scl2;
         private System.Windows.Forms.Button bt_scl1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Names;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Count;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tara;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

@@ -12,6 +12,7 @@ namespace SIP
     {
         MySqlConnection connection = new MySqlConnection("server=127.0.0.1;port=3306;username=root;password=20052003mama;database=sip");
 
+
         public void openConnection()
         {
             if (connection.State == System.Data.ConnectionState.Closed)

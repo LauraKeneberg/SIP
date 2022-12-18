@@ -8,6 +8,12 @@ namespace SIP
 {
     internal static class Program
     {
+        public static string id = "";
+        public static string login = "";
+        public static string password = "";
+        public static string mail = "";
+        public static string city = "";
+        public static string phone = "";
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +22,7 @@ namespace SIP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form4());
+            Application.Run(new Form5());
         }
     }
 }
